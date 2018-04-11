@@ -30,7 +30,7 @@
                                        />
                                 <!--Main window with border and dropshadow-->
                                 <Border CornerRadius="{Binding WindowCornerRadius, FallbackValue=10}"
-                                        Background="{Binding ForegroundLightBrush}">
+                                        Background="{Binding ForegroundLightBrush, FallbackValue=White}">
                                     <Border.Effect>
                                         <DropShadowEffect ShadowDepth="0" Opacity="0.2"/>
                                     </Border.Effect>

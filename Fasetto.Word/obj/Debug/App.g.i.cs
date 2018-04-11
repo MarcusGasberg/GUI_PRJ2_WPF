@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using Fasetto.Word;
+using GUI_PRJ2;
 using System;
 using System.Diagnostics;
 using System.Windows;
@@ -32,7 +32,7 @@ using System.Windows.Shapes;
 using System.Windows.Shell;
 
 
-namespace Fasetto.Word {
+namespace GUI_PRJ2 {
     
     
     /// <summary>
@@ -58,7 +58,7 @@ namespace Fasetto.Word {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/Fasetto.Word;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GUI_PRJ2;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
@@ -74,7 +74,7 @@ namespace Fasetto.Word {
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
         public static void Main() {
-            Fasetto.Word.App app = new Fasetto.Word.App();
+            GUI_PRJ2.App app = new GUI_PRJ2.App();
             app.InitializeComponent();
             app.Run();
         }

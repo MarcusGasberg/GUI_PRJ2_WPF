@@ -154,12 +154,9 @@ namespace Fasetto.Word
             MaximizeCommand = new RelayCommand(() => mWindow.WindowState ^= WindowState.Maximized);
             CloseCommand = new RelayCommand(() => mWindow.Close());
             MenuCommand = new RelayCommand(() => SystemCommands.ShowSystemMenu(mWindow, mWindow.PointToScreen(Mouse.GetPosition(mWindow))));
-
-            //Fix Window resize issue
-            var resizer = new WindowResizer(mWindow);
+            
         }
         #endregion
-
         #region Private Helpers
     
         /// <summary>
