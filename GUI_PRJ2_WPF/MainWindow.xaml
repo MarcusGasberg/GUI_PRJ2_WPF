@@ -118,5 +118,6 @@
             />
     </WindowChrome.WindowChrome>
     <Grid Background="{StaticResource ForegroundLightBrush}">
+        <!--<Frame x:Name="MainFrame" Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}" RenderTransformOrigin="0.484,0.496"/>-->
     </Grid>
 </Window>

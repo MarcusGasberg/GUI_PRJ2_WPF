@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Marcus Gasberg\Documents\GitHub\GUI_PRJ2_WPF\Fasetto.Word\obj\Debug\
+C:\Users\Marcus Gasberg\Documents\GitHub\GUI_PRJ2_WPF\GUI_PRJ2_WPF\obj\Debug\
 GUI_PRJ2
 none
 false
 DEBUG;TRACE
-C:\Users\Marcus Gasberg\Documents\GitHub\GUI_PRJ2_WPF\Fasetto.Word\App.xaml
-61138005991
+C:\Users\Marcus Gasberg\Documents\GitHub\GUI_PRJ2_WPF\GUI_PRJ2_WPF\App.xaml
+7-1530929938
 
-8519826255
+9-1976277822
 15414081253
-MainWindow.xaml;Styles\Colors.xaml;Styles\Buttons.xaml;Styles\Windows.xaml;Styles\Texts.xaml;Styles\Fonts.xaml;
+MainWindow.xaml;Pages\MainMenu.xaml;Styles\Colors.xaml;Styles\Buttons.xaml;Styles\Windows.xaml;Styles\Texts.xaml;Styles\Fonts.xaml;
 
 False
 
