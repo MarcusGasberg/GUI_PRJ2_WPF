@@ -110,6 +110,8 @@ namespace GUI_PRJ2
         /// </summary>
         public int TitleHeight { get; set; } = 32;
 
+        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Main;
+
         public GridLength TitleHeightGridLength { get { return new GridLength(TitleHeight + ResizeBorder); } }
         #endregion
         #region Commands

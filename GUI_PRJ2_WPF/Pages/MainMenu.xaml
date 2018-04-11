@@ -5,6 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:GUI_PRJ2"
       mc:Ignorable="d" 
+      x:Name="Main"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainMenu">
 
