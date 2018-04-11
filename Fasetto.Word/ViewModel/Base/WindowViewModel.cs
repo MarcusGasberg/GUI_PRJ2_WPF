@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
-namespace Fasetto.Word
+namespace GUI_PRJ2
 {
     /// <summary>
     /// View model for the custom flat window

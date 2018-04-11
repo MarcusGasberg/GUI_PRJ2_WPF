@@ -1,7 +1,7 @@
 ﻿using PropertyChanged;
 using System.ComponentModel;
 
-namespace Fasetto.Word
+namespace GUI_PRJ2
 {
     /// <summary>
     /// Base view model that fires property changed events as needed

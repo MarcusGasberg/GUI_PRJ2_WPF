@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Input;
-namespace Fasetto.Word
+namespace GUI_PRJ2
 {
     public class RelayCommand : ICommand
     {
