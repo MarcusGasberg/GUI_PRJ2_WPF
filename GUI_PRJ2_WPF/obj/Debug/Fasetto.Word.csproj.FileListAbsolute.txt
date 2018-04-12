@@ -81,3 +81,7 @@ C:\Users\Marcus Gasberg\Documents\GitHub\GUI_PRJ2_WPF\GUI_PRJ2_WPF\obj\Debug\Fas
 C:\Users\Marcus Gasberg\Documents\GitHub\GUI_PRJ2_WPF\GUI_PRJ2_WPF\obj\Debug\Fasetto.Word.csproj.CopyComplete
 C:\Users\Marcus Gasberg\Documents\GitHub\GUI_PRJ2_WPF\GUI_PRJ2_WPF\obj\Debug\GUI_PRJ2.exe
 C:\Users\Marcus Gasberg\Documents\GitHub\GUI_PRJ2_WPF\GUI_PRJ2_WPF\obj\Debug\GUI_PRJ2.pdb
+C:\Users\Marcus Gasberg\Documents\GitHub\GUI_PRJ2_WPF\GUI_PRJ2_WPF\obj\Debug\Pages\AddMenu.g.cs
+C:\Users\Marcus Gasberg\Documents\GitHub\GUI_PRJ2_WPF\GUI_PRJ2_WPF\obj\Debug\Pages\PictureMenu.g.cs
+C:\Users\Marcus Gasberg\Documents\GitHub\GUI_PRJ2_WPF\GUI_PRJ2_WPF\obj\Debug\Pages\AddMenu.baml
+C:\Users\Marcus Gasberg\Documents\GitHub\GUI_PRJ2_WPF\GUI_PRJ2_WPF\obj\Debug\Pages\PictureMenu.baml

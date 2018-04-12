@@ -9,28 +9,63 @@
       Title="MainMenu">
 
     <Border Background="{StaticResource BackGroundMainBrush}">
-        <StackPanel>
+       <!--The main window content -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <!--TitleBar-->
+                <RowDefinition Height="{Binding TitleHeightGridLength, FallbackValue=32}"/>
+                <!--DropShadow-->
+                <RowDefinition Height="5*"/>
+                <!--WindowContent-->
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
             <!--Title-->
-            <TextBlock Text="Choose an Apparat:"
+            <TextBlock Grid.Column="0" Text="Choose an Apparat:"
                          FontFamily="{StaticResource LatoRegular}"
                          FontSize="{StaticResource FontSizeLarge}"
                          Foreground="{StaticResource ForegroundMainBrush}"
-                         HorizontalAlignment="Center"
-                         Panel.ZIndex="1"/>
+                         HorizontalAlignment="Center"/>
             <!--Apparats-->
-            <Grid Grid.Column="0" Panel.ZIndex="1">
-                <Grid.ColumnDefinitions>
-                    <!--Icon-->
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-                
-                <!--Window Buttons-->
-                <StackPanel Grid.Column="2" Orientation="Horizontal">
-                    <Button Command="{Binding MinimizeCommand}" Style="{StaticResource WindowControlButton}">
-                        <Image Source="/Images/Logo/logo-small.png"/>
+            <Grid Grid.Row="1">
+                <!--Apparat Buttons-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <!--Apparat 1-->
+                        <ColumnDefinition Width="*"/>
+                        <!--Apparat 1-->
+                        <ColumnDefinition Width="*"/>
+                        <!--Apparat 3-->
+                        <ColumnDefinition Width="*"/>
+                        <!--Apparat 4-->
+                        <ColumnDefinition Width="*"/>
+                        <!--Apparat 5-->
+                        <ColumnDefinition Width="*"/>
+                        <!--Apparat 6-->
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <!--Apparat 1-->
+                    <Button Grid.Column="0" Style="{StaticResource ApparatButton}" Command="{Binding MenuCommand}">
+                        <Image Source="/Images/Logo/logo-small.png" Margin="3 3 3 3"/>
                     </Button>
-                </StackPanel>
+                    <!--Apparat 2-->
+                    <Button Grid.Column="1" Style="{StaticResource ApparatButton}" Command="{Binding MenuCommand}">
+                        <Image Source="/Images/Logo/logo-small.png"  Margin="3 3 3 3"/>
+                    </Button>
+                    <!--Apparat 3-->
+                    <Button Grid.Column="2" Style="{StaticResource ApparatButton}" Command="{Binding MenuCommand}">
+                        <Image Source="/Images/Logo/logo-small.png"  Margin="3 3 3 3"/>
+                    </Button>
+                </Grid>
             </Grid>
-        </StackPanel>
+            <StackPanel Grid.Row="2">
+                <Button Style="{StaticResource ApparatButton}" HorizontalAlignment="Right" Content="Add" Margin="0 4 4 4"/>
+                
+            </StackPanel>
+        </Grid>
     </Border>
 </Page>

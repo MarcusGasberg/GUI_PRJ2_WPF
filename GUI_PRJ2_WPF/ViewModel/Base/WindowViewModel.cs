@@ -46,7 +46,7 @@ namespace GUI_PRJ2
         /// <summary>
         /// The Size of the resize border around the window,
         /// </summary>
-        public int ResizeBorder { get; set; } = 6;
+        public int ResizeBorder { get; set; } = 4;
 
         /// <summary>
         /// The Padding of the inner content of the main window
