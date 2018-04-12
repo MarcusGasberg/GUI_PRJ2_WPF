@@ -10,19 +10,19 @@ namespace GUI_PRJ2
     /// <summary>
     /// Enum for the different application pages
     /// </summary>
-    enum ApplicationPage
+    public enum ApplicationPage
     {
         /// <summary>
         /// Initial Main page
         /// </summary>
-        Main = 0,
+        MainMenu = 0,
         /// <summary>
         /// Page where Aparat can be added
         /// </summary>
-        Add = 1,
+        AddMenu = 1,
         /// <summary>
         /// Page where picture for aparat can be chosen
         /// </summary>
-        Picture = 2
+        PictureMenu = 2
     }
 }

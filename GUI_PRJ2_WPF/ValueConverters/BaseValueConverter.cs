@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Data;
 using System.Windows.Markup;
 
@@ -12,7 +8,7 @@ namespace GUI_PRJ2
     /// <summary>
     /// A base value converter that allows direct XAML usage
     /// </summary>
-    /// <typeparam name="T"> The type of this value converter</typeparam>
+    /// <typeparam name="T"></typeparam>
     public abstract class BaseValueConverter<T> : MarkupExtension, IValueConverter
         where T : class, new()
     {
@@ -22,22 +18,20 @@ namespace GUI_PRJ2
         /// </summary>
         private static T mConverter = null;
         #endregion
-
         #region Markup Extension Methods
         /// <summary>
-        /// Provide a static instance of the value converter
+        /// Provides a static instance of the value converter
         /// </summary>
-        /// <param name="serviceProvider">The servie provider</param>
+        /// <param name="serviceProvider">The service provider</param>
         /// <returns></returns>
         public override object ProvideValue(IServiceProvider serviceProvider)
         {
-            //if (mConverter == null)
-            //mConverter = newT();
+            //if(mConverter == null)
+            //  mconverter = new T();
             //return mConverter;
             return mConverter ?? (mConverter = new T());
         }
         #endregion
-
         #region Value Converter Methods
         /// <summary>
         /// The method to convert one type to another
@@ -49,7 +43,7 @@ namespace GUI_PRJ2
         /// <returns></returns>
         public abstract object Convert(object value, Type targetType, object parameter, CultureInfo culture);
         /// <summary>
-        /// The method to convert a value back to its source type
+        /// The method to convert back to its source value
         /// </summary>
         /// <param name="value"></param>
         /// <param name="targetType"></param>
@@ -57,7 +51,6 @@ namespace GUI_PRJ2
         /// <param name="culture"></param>
         /// <returns></returns>
         public abstract object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture);
-
         #endregion
     }
 }

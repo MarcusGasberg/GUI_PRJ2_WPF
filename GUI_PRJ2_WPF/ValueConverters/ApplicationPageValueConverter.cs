@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using GUI_PRJ2.Pages;
+using System;
 using System.Diagnostics;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GUI_PRJ2
 {
     /// <summary>
-    /// Converts The <see cref="ApplicationPage"/> to an actual view/page
+    /// Converts the <see cref="ApplicationPage"/> to an actual page
     /// </summary>
     public class ApplicationPageValueConverter : BaseValueConverter<ApplicationPageValueConverter>
     {
@@ -18,8 +15,8 @@ namespace GUI_PRJ2
             //Find the appropriate page
             switch ((ApplicationPage)value)
             {
-                case ApplicationPage.Main:
-                    return new MainWindow();
+                case ApplicationPage.MainMenu:
+                    return new MainMenu();
 
                 default:
                     Debugger.Break();
