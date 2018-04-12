@@ -9,7 +9,7 @@
     <SolidColorBrush x:Key="BackGroundVeryLightBrush" Color="{StaticResource BackGroundVeryLight}"/>
 
     <Color x:Key="BackGroundMain">#dededede</Color>
-    <SolidColorBrush x:Key="BackGroundMainBrush" Color="{StaticResource BackGroundVeryLight}"/>
+    <SolidColorBrush x:Key="BackGroundMainBrush" Color="{StaticResource BackGroundMain}"/>
 
     <Color x:Key="ForegroundMain">#686868</Color>
     <SolidColorBrush x:Key="ForegroundMainBrush" Color="{StaticResource ForegroundMain}"/>
