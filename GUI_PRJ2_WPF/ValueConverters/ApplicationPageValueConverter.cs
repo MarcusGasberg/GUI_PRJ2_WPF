@@ -1,5 +1,4 @@
-﻿using GUI_PRJ2.Pages;
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Globalization;
 
@@ -15,9 +14,12 @@ namespace GUI_PRJ2
             //Find the appropriate page
             switch ((ApplicationPage)value)
             {
-                case ApplicationPage.MainMenu:
-                    return new MainMenu();
-
+                case ApplicationPage.ApparatMenu:
+                    return new ApparatMenu();
+                case ApplicationPage.AddMenu:
+                    return new AddMenu();
+                case ApplicationPage.ActionMenu:
+                    return new AddMenu();
                 default:
                     Debugger.Break();
                     return null;

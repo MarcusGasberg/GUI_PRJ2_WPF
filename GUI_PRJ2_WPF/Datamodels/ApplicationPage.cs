@@ -15,14 +15,14 @@ namespace GUI_PRJ2
         /// <summary>
         /// Initial Main page
         /// </summary>
-        MainMenu = 0,
+        ApparatMenu = 0,
         /// <summary>
         /// Page where Aparat can be added
         /// </summary>
         AddMenu = 1,
         /// <summary>
-        /// Page where picture for aparat can be chosen
+        /// Page where apparat actions can be chosen
         /// </summary>
-        PictureMenu = 2
+        ActionMenu = 2
     }
 }

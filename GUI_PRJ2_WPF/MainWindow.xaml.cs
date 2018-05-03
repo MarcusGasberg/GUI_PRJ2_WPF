@@ -24,7 +24,7 @@ namespace GUI_PRJ2
         {
             InitializeComponent();
 
-            this.DataContext = new WindowViewModel(this);
+            DataContext = new WindowViewModel(this);
         }
     }
 }

@@ -16,7 +16,7 @@ namespace GUI_PRJ2
         /// <summary>
         /// A single static instance of this value converter
         /// </summary>
-        private static T mConverter = null;
+        private static T converter_ = null;
         #endregion
         #region Markup Extension Methods
         /// <summary>
@@ -29,7 +29,7 @@ namespace GUI_PRJ2
             //if(mConverter == null)
             //  mconverter = new T();
             //return mConverter;
-            return mConverter ?? (mConverter = new T());
+            return converter_ ?? (converter_ = new T());
         }
         #endregion
         #region Value Converter Methods

@@ -1,14 +1,47 @@
-﻿<Page x:Class="GUI_PRJ2.Pages.AddMenu"
+﻿<local:BasePage x:TypeArguments="lib:AddMenuViewModel" x:Class="GUI_PRJ2.AddMenu"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:GUI_PRJ2.Pages"
-      mc:Ignorable="d" 
+      xmlns:local="clr-namespace:GUI_PRJ2"
+      xmlns:lib="clr-namespace:GUI_PRJ2_Library;assembly=GUI_PRJ2_Library"
+      mc:Ignorable="d"
+      x:Name="Page"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AddMenu">
 
-    <Grid>
-        
-    </Grid>
-</Page>
+    <Border Background="{StaticResource BackGroundMainBrush}">
+        <!--The main window content -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <!--TitleBar-->
+                <RowDefinition Height="*"/>
+                <!--Settings-->
+                <RowDefinition Height="5*"/>
+                <!--Add-->
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--Title-->
+            <TextBlock Grid.Column="0" Text="Define your apparat"
+                       FontSize="30"
+                       
+                       Style="{StaticResource MainText}"/>
+            <!--Settings-->
+            <StackPanel Grid.Row="1">
+                <TextBlock Text="Name:" Style="{StaticResource MainText}"/>
+                <TextBox Width="160" HorizontalAlignment="Left" Height="20" Margin="5 0 5 5"/>
+                <TextBlock Text="Port:" Style="{StaticResource MainText}"/>
+                <ComboBox Width="160" HorizontalAlignment="Left" Margin="5 0 5 5"/>
+                <TextBlock Text="Functionality:" Style="{StaticResource MainText}"/>
+                <ListView Width="160" Height="100" HorizontalAlignment="Left" Margin="5 0 5 5"/>
+            </StackPanel>
+            
+            <!--Add butto-->
+            <Button Grid.Row="2" Style="{StaticResource ApparatButton}"
+                        Command="{Binding ToAddPageCommand}"
+                        HorizontalAlignment="Right" 
+                        Content="Add" 
+                        Margin="0 4 4 4"/>
+        </Grid>
+    </Border>
+</local:BasePage>
