@@ -2,15 +2,13 @@
 using System.Windows.Input;
 namespace GUI_PRJ2_Library
 {
-    public class RelayCommand<T> : ICommand
+    public class RelayCommand : ICommand
     {
-        #region Fields
+        #region Private Members
         /// <summary>
         /// The action to run
         /// </summary>
-        readonly Action<T> execute_ = null;
-
-        readonly Predicate<T> canExecute_ = null;
+        private Action mAction;
         #endregion 
         #region Public Events
         /// <summary>
@@ -18,20 +16,10 @@ namespace GUI_PRJ2_Library
         /// </summary>
         public event EventHandler CanExecuteChanged = (sender, e) => { };
         #endregion
-        #region Constructors
-        /// <summary>
-        /// Initializes a new instance of <see cref="DelegateCommand{T}"/>
-        /// </summary>
-        /// <param name="execute"></param>
-        public RelayCommand(Action<T> execute)
-            : this(execute, null)
+        #region Constructor
+        public RelayCommand(Action action)
         {
-        }
-
-        public RelayCommand(Action<T> execute, Predicate<T> canExecute)
-        {
-            execute_ = execute ?? throw new ArgumentNullException("execute");
-            canExecute_ = canExecute;
+            mAction = action;
         }
         #endregion
         #region Command Methods
@@ -42,7 +30,7 @@ namespace GUI_PRJ2_Library
         /// <returns></returns>
         public bool CanExecute(object parameter)
         {
-            return canExecute_ == null ? true : canExecute_((T)parameter);
+            return true;
         }
         /// <summary>
         /// Execture the commands Action
@@ -50,7 +38,7 @@ namespace GUI_PRJ2_Library
         /// <param name="parameter"></param>
         public void Execute(object parameter)
         {
-            action_();
+            mAction();
         }
         #endregion
     }
